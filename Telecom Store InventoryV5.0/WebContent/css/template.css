@@ -1,0 +1,25 @@
+body
+{
+	margin:0px;
+	padding:0px;
+}
+#header1
+{
+	background: url('../images/tempBar.png');
+	height:75px;
+	width:100%;
+	margin-bottom:32px;
+	background-repeat:repeat-x;
+}
+
+.PreloginContainer
+{
+	padding-top:15px;
+	height:55px;
+}
+.loginContainer
+{
+	margin-left:100px;
+	padding-top:15px;
+}
+

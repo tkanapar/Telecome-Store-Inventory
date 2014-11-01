@@ -1,0 +1,171 @@
+
+/* Main topmenu */
+
+#topmenu
+{
+	list-style: none;  
+}
+
+#topmenu li
+{
+	float: left;
+	position: relative;
+	line-height: 0;
+}
+
+#topmenu a 
+{
+	float: left;
+	padding-right:15px;
+	padding-left:15px;
+	color: #999;
+	text-transform:capitalize;
+	font: bold 12px/25px Arial, Helvetica;
+	text-decoration: none;
+	text-shadow: 0 1px 0 #000;
+	color:white;
+	border-right: 1px solid #03344c;
+	
+}
+#topmenu ul a
+{
+	border:none;
+}
+	
+#topmenu li:hover > a
+{
+	color: #03344c;
+	font-weight:bold;
+	background:red;
+	box-shadow: -10px 10px 10px black;
+	
+	 -o-transition:1s;
+  -ms-transition:1s;
+  -moz-transition:1s;
+  -webkit-transition:1s;
+  /* ...and now for the proper property */
+  transition:.7s;
+  background: url('../images/abcef.png');
+	
+}
+
+*html #topmenu li a:hover /* IE6 */
+{
+	color: #fafafa;
+	background-color:#43748f;
+}
+
+#topmenu li:hover > ul
+{
+	display: block;
+}
+
+/* Sub-topmenu */
+
+
+#topmenu ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;    
+    position: absolute;
+    top: 25px;
+    left: 0;
+    z-index: 99999;    
+    
+    -moz-box-shadow: 0 0 2px rgba(255,255,255,.5);
+    -webkit-box-shadow: 0 0 2px rgba(255,255,255,.5);
+    box-shadow: 0 0 2px rgba(255,255,255,.5);
+    box-shadow: -5px 5px 10px #03344c;	
+}
+
+
+#topmenu ul li
+{
+    float: none;
+    margin: 0;
+    padding: 0;
+    display: block;  
+    -moz-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    -webkit-box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    box-shadow: 0 1px 0 #111111, 0 2px 0 #777777;
+    height:35px;
+    background: url('../images/submenubar.png');
+    background-repeat:repeat-x; 	
+}
+
+#topmenu ul li:last-child
+{   
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+#topmenu ul a
+{    
+    padding: 12px;
+	height: 10px;
+	width: 124px;
+	height: auto;
+    line-height: 1;
+    display: block;
+    white-space: nowrap;
+    float: none;
+	text-transform: none;
+}
+
+
+#topmenu ul a:hover
+{
+    background: #0186ba;
+    color:white;
+	background: -moz-linear-gradient(#04acec,  #0186ba);	
+	background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+	background: -webkit-linear-gradient(#04acec,  #0186ba);
+	background: -o-linear-gradient(#04acec,  #0186ba);
+	background: -ms-linear-gradient(#04acec,  #0186ba);
+	background: linear-gradient(#04acec,  #0186ba);
+}
+
+#topmenu ul li:first-child > a
+{
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+}
+
+#topmenu ul li:first-child > a:after
+{
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 8px solid red;
+}
+
+#topmenu ul ul li:first-child a:after
+{
+    left: -8px;
+    top: 12px;
+    width: 0;
+    height: 0;
+    border-left: 0;	
+    border-bottom: 5px solid transparent;
+    border-top: 5px solid transparent;
+    border-right: 8px solid #444;
+}
+
+#topmenu ul li:first-child a:hover:after
+{
+    border-bottom-color: red; 
+}
+
+
+#topmenu ul li:last-child > a
+{
+    -moz-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+}

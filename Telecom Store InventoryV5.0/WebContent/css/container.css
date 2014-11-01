@@ -1,0 +1,35 @@
+
+.banner
+{
+	width:1024px;
+	
+	height:169px;
+	margin:auto;
+	margin-top:2px;
+	background-image:url(../images/bannerFinal.png);
+	background-repeat:no-repeat;
+}
+#container3
+{
+	color:red;
+	width:70%;
+	margin-left:20%;
+	margin-top:2%;
+	border:1px solid red;
+}
+.leftnav
+{
+	float:left;
+	width:12%;
+}
+.body1
+{
+	width:100%
+}
+body
+{
+	font:14px/1.3 Arial,sans-serif;
+    background-color:#212121;
+    height:768px;
+    background-image:url(../images/noise1.png);
+}
